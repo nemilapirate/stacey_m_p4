@@ -1,8 +1,8 @@
-# Projet 4 : Crétion d'un tournoi d'échec avec Python
+# Projet 4 : Création d'un tournoi d'échec avec Python
 
 ## Installation : 
 
-Pré-requis : Avoir Python3 installer.
+Pré-requis : Python3
 
 Dossier Git à cloner pour lancer le programme : 
     https://github.com/nemilapirate/stacey_m_p4.git
