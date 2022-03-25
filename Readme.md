@@ -29,11 +29,15 @@ Le menu principal donne accès à plusieurs options.
 #### 1. Créer un tournoi.
 L'option 1 permet de créer un tournoi puis de créer des joueurs et enfin lancer le tournois avec les joueurs précedement créer.
 
+    * Lors de la création du tournoi, il faudra saisir les informations comme le nom du tournoi, le nombre de joueurs etc...
+    * Ensuite créer les joueurs avec leurs informations et enfin lancer le match.
+    * Le tournoi et les joueurs seront automatiquement sauvegarder dans la base de données, ce qui permet de reprendre un tournoi.
+
 ##### 2. Charger un tournoi.
 Cette option permet de charger un tournoi qui est sauvegarder dans la base de données.
 Une fois séléctionner, vous pourrez commencer le tournoi.
 
 ##### 3. Voir les rapports.
 Cette option permet de générer différents rapports:
-    Consulter le classement global des joueurs, par rang ou bien par ordre alphabétique.
-    Voir les détails des tournois précedement jouer, le classement des joueurs, les tours et matchs pour chaque tournois.
+    * Consulter le classement global des joueurs, par rang ou bien par ordre alphabétique.
+    * Voir les détails des tournois précedement jouer, le classement des joueurs, les tours et matchs pour chaque tournois.
