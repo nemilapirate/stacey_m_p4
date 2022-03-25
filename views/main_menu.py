@@ -11,7 +11,7 @@ class MainMenu(Setting):
     def display_main_menu(self):
 
         while True:
-            print("-"*20 + " MENU PRINCIPALE " + "-"*20)
+            print("-"*20 + " MENU PRINCIPAL " + "-"*20)
             user_input = self.get_user_entry(
                 message_display="1 - Créer un tournoi\n"
                             "2 - Charger un tournoi\n"
@@ -111,7 +111,7 @@ class MainMenu(Setting):
         )
         if user_input == "1":
             for i, player in enumerate(rankings):
-                print(player.name)
+                # print(player.name)
                 update_rankings(player, i + 1)
 
         elif user_input == "2":

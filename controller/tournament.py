@@ -62,9 +62,9 @@ def create_tournament():
 def play_tournament(tournament, new_tournament_loaded=False):
 
     menu = Setting()
-    print()
+    print("-"*50)
     print(f"Début du tournoi {tournament.name}")
-    print()
+    print("-"*50)
 
     while True:
 
@@ -93,7 +93,7 @@ def play_tournament(tournament, new_tournament_loaded=False):
             while True:
                 print()
                 user_input = menu.get_user_entry(
-                    message_display="1 - Round suivant\n"
+                    message_display="1 - Lancer le match \n"
                                 "2 - Voir les classements\n"
                                 "3 - Mettre à jour les classements\n"
                                 "4 - Sauvegarder le tournoi\n"

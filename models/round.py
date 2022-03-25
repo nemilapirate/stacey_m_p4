@@ -25,6 +25,7 @@ class Round:
         for i, pair in enumerate(self.players_pairs):
             matchs.append(Match(name=f"Match {i}", players_pair=pair))
         return matchs
+        
 
     def mark_as_complete(self):
         self.end_date = get_timesetting()

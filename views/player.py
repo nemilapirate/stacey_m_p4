@@ -39,7 +39,7 @@ class CreatePlayer(Setting):
             "rank": rank,
         }
 
-
+# Chargement des joueurs depuis la base de données
 class LoadPlayer(Setting):
 
     def display_menu(self, nb_players_to_load):
@@ -64,7 +64,7 @@ class LoadPlayer(Setting):
             if all_players[user_input-1] not in serialized_loaded_players:
                 serialized_loaded_players.append(all_players[user_input-1])
             else:
-                print("Joueur déjà chargé. Merci de choisir un autre joueur.")
+                print("Joueur déjà chargé.")
                 nb_players_to_load += 1
 
         return serialized_loaded_players

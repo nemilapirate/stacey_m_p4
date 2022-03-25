@@ -18,9 +18,11 @@ class Match:
 
 
         # Match joué, on rentre les scores
-        print()
+        print("-"*50)
         winner = Setting().get_user_entry(
-            message_display=f"{self.player1.first_name} VS " +
+            message_display=
+                        f"Fin du match : "
+                        f"{self.player1.first_name} contre " +
                         f"{self.player2.first_name} \n"
                         f"Qui est le gagnant ?\n"
                         f"1 - {self.player1.first_name} \n"
@@ -30,7 +32,6 @@ class Match:
             input_value="select",
             statement=["0", "1", "2"]
         )
-
         if winner == "1":
             self.winner = self.player1.first_name
             self.score_player1 += 1

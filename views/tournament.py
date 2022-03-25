@@ -68,7 +68,7 @@ class LoadTournament(Setting):
                                                      assertions=[])
 
             user_input = int(self.get_user_entry(
-                message_display=builded_selection['msg'] + "\n> ",
+                message_display=builded_selection['msg'] + "\nChoix du tournoi : ",
                 message_error="Veuillez entrer un nombre entier.",
                 input_value="select",
                 statement=builded_selection['assertions']

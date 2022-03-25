@@ -20,7 +20,7 @@ def save_db(db_name, serialized_data):
         db = TinyDB("data/" + db_name + ".json")
 
     db.insert(serialized_data)
-    print(f"Le joueur {serialized_data['name']} sauvegardé dans la base de données.")
+    print(f"Le tournoi {serialized_data['name']} sauvegardé dans la base de données.")
 
 # Mise a jour les informations du tournoi 
 def update_db(db_name, serialized_data):

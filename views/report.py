@@ -172,7 +172,7 @@ class Report(Setting):
                         )
                         print("Matchs:")
                         user_input = self.get_user_entry(
-                            message_display=builded_selection['msg'] + "q- Quitter\n ",
+                            message_display=builded_selection['msg'] + "q- Quitter\n",
                             message_error="Veuillez faire un choix valide.",
                             input_value="select",
                             statement=builded_selection['assertions']
@@ -189,7 +189,7 @@ class Report(Setting):
                                       f"Gagnant: {selected_match['winner']}\n"
                                       )
                                 user_input = self.get_user_entry(
-                                    message_display="q- Quitter\n> ",
+                                    message_display="q- Quitter\n",
                                     message_error="Veuillez faire un choix valide",
                                     input_value="select",
                                     statement=["q"]
