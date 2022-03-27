@@ -7,11 +7,11 @@ class CreatePlayer(Setting):
         print("-"*20 + " Création d'un joueur " + "-"*20)
         name = input("Nom du joueur :\n")
 
-        first_name = input("Prénom du joueur :\n ")
+        first_name = input("Prénom du joueur :\n")
 
         dateofbirth = self.get_user_entry(
-            message_display="Date de naissance (format DD-MM-YYYY):\n",
-            message_error="Veuillez entrer une date au format valide: DD-MM-YYYY",
+            message_display="Date de naissance (JJ-MM-AAAA):\n",
+            message_error="Veuillez entrer une date au format valide: format JJ-MM-AAAA",
             input_value="date"
         )
 

@@ -62,7 +62,7 @@ class MainMenu(Setting):
                                 input_value="select",
                                 statement=[ "1", "2", "q"]
                             )
-                            if user_input == "r":
+                            if user_input == "q":
                                 break
                             elif user_input == "1":
                                 sorted_players = Report().sort_players(Report().players, by_rank=True)
@@ -93,7 +93,7 @@ class MainMenu(Setting):
             quit()
 
         # on affiche les résultats
-        print()
+        print("-"*50)
         print(f"Tournoi {tournament.name} terminé !\nRésultats:")
         for i, player in enumerate(rankings):
             print(f"{str(i + 1)} - {player}")

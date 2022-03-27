@@ -24,7 +24,7 @@ class Report(Setting):
 
             # Affichage du classement
             user_input = self.get_user_entry(
-                message_display=builded_selection['msg'] + "q - Quitter\n> ",
+                message_display=builded_selection['msg'] + "q - Quitter\n",
                 message_error="Veuillez faire un choix valide.",
                 input_value="select",
                 statement=builded_selection['assertions']
@@ -69,7 +69,7 @@ class Report(Setting):
 
             # Affichage de tout les tournois
             user_input = self.get_user_entry(
-                message_display=builded_selection['msg'] + "q - Quitter \n> ",
+                message_display=builded_selection['msg'] + "q - Quitter \n",
                 message_error="Veuillez faire un choix valide.",
                 input_value="select",
                 statement=builded_selection['assertions']
@@ -113,9 +113,10 @@ class Report(Setting):
                                             "q - Quitter\n",
                                 message_error="Veuillez entrer une sélection valide",
                                 input_value="select",
-                                statement=[ "1","2","r"]
+                                statement=[ "1","2","q"]
                             )
                             if user_input == "q":
+# ICI C'EST PAS BOOOOOOOOOOOOOOOOON !!!!!!!!!!!!!!!!!! Mais ça va, c'est rien de grave, mais fo le faire ma cocotte ! :D Retour au main menu                               
                                 break
                             elif user_input == "1":
                                 sorted_players = self.sort_players(selected_tournament["players"],
