@@ -1,14 +1,17 @@
 from controller.player import create_player, update_rankings
 from controller.database import save_db, update_db, load_player, load_tournament
 from models.tournament import Tournament
+# from views.main_menu import MainMenu
 from views.player import LoadPlayer
-from views.setting import Setting
+from views.view import View
 from views.tournament import CreateTournament, LoadTournament
+
+# def display_main_menu
 
 
 def create_tournament():
 
-    menu = Setting()
+    menu = View()
     # Récupération des infos du tournoi
     user_entries = CreateTournament().display_menu()
 
@@ -61,7 +64,7 @@ def create_tournament():
 
 def play_tournament(tournament, new_tournament_loaded=False):
 
-    menu = Setting()
+    menu = View()
     print("-"*50)
     print(f"Début du tournoi {tournament.name}")
     print("-"*50)

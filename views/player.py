@@ -1,7 +1,7 @@
 from controller.database import load_db
-from views.setting import Setting
+from views.view import View
 
-class CreatePlayer(Setting):
+class CreatePlayer(View):
 
     def display_menu(self):
         print("-"*20 + " Création d'un joueur " + "-"*20)
@@ -40,7 +40,7 @@ class CreatePlayer(Setting):
         }
 
 # Chargement des joueurs depuis la base de données
-class LoadPlayer(Setting):
+class LoadPlayer(View):
 
     def display_menu(self, nb_players_to_load):
 

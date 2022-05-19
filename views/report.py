@@ -1,9 +1,9 @@
 from controller.database import load_db
-from views.setting import Setting
+from views.view import View
 from operator import itemgetter
 
 
-class Report(Setting):
+class Report(View):
 
     def __init__(self):
         self.players = load_db("players")

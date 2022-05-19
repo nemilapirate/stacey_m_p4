@@ -1,6 +1,6 @@
 #Mise en place des parametres de validation
 
-class Setting:
+class View:
 
     def get_user_entry(self, message_display, message_error, input_value, statement=None, default_value=None):
         while True:

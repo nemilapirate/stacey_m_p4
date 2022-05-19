@@ -3,20 +3,20 @@ from controller.player import update_rankings
 from controller.tournament import create_tournament, play_tournament
 
 from views.report import Report
-from views.setting import Setting
+from views.view import View
 from views.tournament import LoadTournament
 
-class MainMenu(Setting):
+class MainMenu(View):
 
     def display_main_menu(self):
 
         while True:
             print("-"*20 + " MENU PRINCIPAL " + "-"*20)
             user_input = self.get_user_entry(
-                message_display="1 - Créer un tournoi\n"
-                            "2 - Charger un tournoi\n"
-                            "3 - Voir les rapports\n"
-                            "q - Quitter\n"
+                message_display="[ 1 ]- Créer un tournoi\n"
+                            "[ 2 ] - Reprendre un tournoi en cour \n"
+                            "[ 3 ] - Voir les rapports\n"
+                            "[ q ]- Quitter\n"
                             "Votre choix : ",
                 message_error="Veuillez entrer une valeur valide",
                 input_value="select",
@@ -124,4 +124,4 @@ class MainMenu(Setting):
                 update_rankings(player, rank)
 
         else:
-            quit()
+            MainMenu().display_main_menu()

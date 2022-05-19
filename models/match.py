@@ -1,4 +1,4 @@
-from views.setting import Setting
+from views.view import View
 
 class Match:
     def __init__(self, name, players_pair):
@@ -19,7 +19,7 @@ class Match:
 
         # Match joué, on rentre les scores
         print("-"*50)
-        winner = Setting().get_user_entry(
+        winner = View().get_user_entry(
             message_display=
                         f"Fin du match : "
                         f"{self.player1.first_name} contre " +

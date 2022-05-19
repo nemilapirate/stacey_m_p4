@@ -1,8 +1,8 @@
 from controller.database import load_db
 from controller.timesetting import get_timesetting
-from views.setting import Setting
+from views.view import View
 
-class CreateTournament(Setting):
+class CreateTournament(View):
 
     def display_menu(self):
 
@@ -56,7 +56,7 @@ class CreateTournament(Setting):
         }
 
 
-class LoadTournament(Setting):
+class LoadTournament(View):
 
     def display_menu(self):
 
